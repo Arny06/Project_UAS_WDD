@@ -1,66 +1,96 @@
 body {
-  font-family: sans-serif;
-  margin: 0;
+    font-family: 'Arial', sans-serif; /* Gunakan font spesifik untuk konsistensi */
+    margin: 20px; /* Kurangi margin agar tidak terlalu besar */
+    line-height: 1.6; /* Tambahkan line-height untuk keterbacaan */
+    background-color: #5089c7; /* Tambahkan warna latar belakang yang lembut */
+    color: #333; /* Warna teks utama */
 }
 
 header {
-  background-color: #e0e0e0;
-  padding: 10px;
+    background-color: #ddaf19; /* Warna latar belakang putih untuk kontras */
+    padding: 20px;
+    border-bottom: 1px solid #ddd; /* Tambahkan pembatas bawah */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Tambahkan sedikit bayangan */
 }
 
-nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+nav {s
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 #menu-toggle {
-  display: none;
-  font-size: 2em;
-  cursor: pointer;
+    display: none;
+    font-size: 1.8em;
+    cursor: pointer;
 }
 
 nav a {
-  text-decoration: none;
-  color: #333;
-  margin: 0 10px;
+    text-decoration: none;
+    color: #333;
+    padding: 10px 15px; /* Tambahkan padding untuk area klik yang lebih besar */
+    border-radius: 5px; /* Sudut membulat */
+    transition: background-color 0.3s ease; /* Efek transisi pada hover */
+    margin: 0 5px; /* Sesuaikan jarak antar link */
 }
 
+nav a:hover {
+    background-color: #ddd; /* Warna latar belakang saat hover */
+}
+
+h1, h2, h3 {
+    font-weight: 600; /* Gunakan font yang lebih tebal */
+    margin-bottom: 10px;
+}
+
+
 .content-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
 }
 
 .article {
-  width: 45%;
-  margin-bottom: 20px;
+    width: 48%; /* Sesuaikan lebar untuk kesimetrisan */
+    margin-bottom: 20px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1); /* Tambahkan bayangan untuk visual appeal */
+    padding: 20px;
 }
 
 .map-container {
-  width: 45%;
+    width: 48%;
+    margin-bottom: 20px;
 }
 
 .map-container img {
-  width: 100%;
+    width: 100%;
+    height: auto; /* Pertahankan aspect ratio */
 }
 
+.article img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 10px;
+    display: block; /* Hapus space ekstra di bawah gambar */
+    margin-left: auto;
+    margin-right: auto; /* Center the image */
+}
+
+/* Media Queries (Responsif Design) */
 @media (max-width: 768px) {
-  #menu-toggle {
-    display: block;
-  }
-  nav a {
-    display: none;
-  }
-  .article {
-    width: 100%;
-  }
-  .map-container {
-    width: 100%;
-  }
+    #menu-toggle {
+        display: block;
+    }
+    nav a {
+        display: none;
+    }
+    .article, .map-container {
+        width: 95%; /* Lebar penuh pada layar kecil */
+    }
 }
 
 nav a.show {
-  display: block;
-  margin: 5px 0;
+    display: block;
+    margin: 5px 0;
 }
