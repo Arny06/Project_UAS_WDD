@@ -6,37 +6,65 @@
 </head>
 <body>
   <header>
-    <nav>
-      <div id="menu-toggle">&#9776;</div>
-      <a href="#">Home</a>
-      <a href="#">Map</a>
-    </nav>
-    <h1>GeoPedia</h1>
+   <nav class="navbar">
+      <div class="logo">
+        <h1>Wander Taste</h1>
+      </div>
+      <ul class="nav-links">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Map</a></li>
+        <li><a href="#">Continent</a></li>
+      </ul>
+      <form action="/search" method="GET" class="search-form">
+        <input
+          type="text"
+          name="q"
+          placeholder="Search..."
+          class="search-input"
+          aria-label="Search"
+        />
+        <button type="submit" class="search-button">Search</button>
+      </form>
+   </nav>
   </header>
-
   <main>
-    <h2>Informasi Geografi</h2>
+    <div style="text-align: center;">
+     <h2 >Informasi Geografi</h2>
+    </div>
     <div class="content-container">
-      <div class="article">
-        <h3>The Ultimate Guide to Writing</h3>
-        <p>Duis interdum ligula ut lobortis facilisis. Praesent suscipit lobortis lectus. Aenean sed elit molestie, interdum eros quis, consectetur massa. Morbi pellentesque porta imperdiet. Nulla lacinia lorem ac blandit commodo.Etiam at vehicula ante, consectetur scelerisque est. Sed tempor elit id mattis vehicula. Mauris sollicitudin velit sed nisl tempor, eu mattis quam mattis.</p>
-        <img src="writing-image.jpg" alt="Gambar Artikel">
-      </div>
-      <div class="map-container">
+      <section class="three-column-layout">
+    <div class="text-left">
+        <h2>The Ultimate Guide to Writing</h2>
+        <p>Duis interdum ligula ut lobortis facilisis...</p>
+        <p>Etiam at vehicula ante, consectetur scelerisque est...</p>
+    </div>
+    <div style="text-align: center;">
         <img src="Image/petaduunia.png" alt="Peta Dunia">
+        </div>
       </div>
+     <div class="text-right">
+      <h2>The Ultimate Guide to Writing</h2>
+      <p>Duis interdum ligula ut lobortis facilisis...</p>
+      <p>Etiam at vehicula ante, consectetur scelerisque est...</p>
+   </div>
+   </section>
+
+   <div class="article">
+        <h3>Menul 1</h3>
+        <p>...</p> <img src="Image/Menu1.jpeg" alt="Gambar Artikel 2">
+      </div>
+      <div class="content-container">
       <div class="article">
-        <h3>The Ultimate Guide to Writing</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In volutpat lorem sit amet sapien sagittis dignissim. Suspendisse potenti. Proin nunc turpis, suscipit sed elit a, pellentesque gravida ante. Quisque convallis, dolor et viverra posuere, felis nisl pulvinar dui, vel venenatis leo quam eu nisi. Mauris mattis nec nunc ut mollis. Donec neque arcu, gravida ac cursus vitae, vulputate bibendum mi. Aliquam rhoncus tincidunt est, a molestie quam fringilla vel. Proin ultricies dolor sit amet elit porta, at aliquet tortor pulvinar. Cras non blandit massa</p>
-        <img src="food-image.jpg" alt="Gambar Makanan">
+        <h3>Menu 2</h3>
+        <p>...</p> <img src="Image/Menu2.jpeg" alt="Gambar Artikel 1">
       </div>
     </div>
+  <main>
+
   </main>
 
   <footer>
-    <p>&copy; 2024 GeoPedia</p>
+    <p>&copy; 2025 GeoPedia</p>
   </footer>
-
-  <script src="script.js"></script>
 </body>
 </html>
