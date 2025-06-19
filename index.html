@@ -8,19 +8,26 @@
 </head>
 <body>
   <header>
-    <div class="logo">
-      🌍 <span>Geo</span>Pedia
-    </div>
-    <nav>
-      <ul>
-        <li class="active">Home</li>
-        <li>Map</li>
+   <nav class="navbar">
+      <div class="logo">
+        <h1>Wander Taste</h1>
+      </div>
+      <ul class="nav-links">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Map</a></li>
+        <li><a href="#">Continent</a></li>
       </ul>
+      <form action="/search" method="GET" class="search-form">
+        <input
+          type="text"
+          name="q"
+          placeholder="Search..."
+          class="search-input"
+          aria-label="Search"
+        />
+        <button type="submit" class="search-button">Search</button>
+      </form>
     </nav>
-    <div class="search-profile">
-      <input type="text" placeholder="Search your dish..." />
-      <div class="profile-icon">👤</div>
-    </div>
   </header>
 
   <main>
@@ -32,7 +39,7 @@
         <img src="Image/Menu1.jpeg" alt="Dish 1">
       </div>
       <div class="map">
-        <img src="Image/petaduunia.png" alt="World Map">
+        <img src="Image/map_dunia.png" alt="World Map">
       </div>
       <div class="card right">
         <h2><span>The</span> <strong>Ultimate</strong><br>Guide to Writing</h2>
@@ -45,7 +52,6 @@
       <div class="card">
         <h2><span>The</span> <strong>Ultimate</strong> Guide to Writing</h2>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In volutpat lorem sit amet sapien sagittis dignissim. Suspendisse potenti. Proin nunc turpis, suscipit sed elit a, pellentesque gravida ante. Quisque convallis, dolor et viverra posuere, felis nisl pulvinar dui, vel venenatis leo quam eu nisi. Mauris mattis nec nunc ut mollis. Donec neque arcu, gravida ac cursus vitae, vulputate bibendum mi. Aliquam rhoncus tincidunt est, a molestie quam fringilla vel. Proin ultricies dolor sit amet elit porta, at aliquet tortor pulvinar. Cras non blandit massa</p>
-        <img src="img3.jpg" alt="Dish 3">
       </div>
     </section>
   </main>
